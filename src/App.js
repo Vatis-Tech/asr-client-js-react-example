@@ -10,10 +10,10 @@ import humanizeDuration from "./humanize-duration.js";
 const VTC_SERVICE = "LIVE_ASR";
 const VTC_LANGUAGE = "ro_RO";
 const VTC_LOG = true;
-const VTC_MICROPHONE_TIMESLICE = 250;
-const VTC_FRAME_LENGTH = 0.3;
-const VTC_FRAME_OVERLAP = 0.3;
-const VTC_BUFFER_OFFSET = 0.3;
+const VTC_MICROPHONE_TIMESLICE = 500;
+const VTC_FRAME_LENGTH = 0.6;
+const VTC_FRAME_OVERLAP = 1.0;
+const VTC_BUFFER_OFFSET = 0.5;
 const NO_INSTANCES_AVAILABLE_ERROR_CODE = 429;
 const NO_INSTANCES_AVAILABLE_ERROR_MESSAGE = "No instance available";
 const VTC_API_KEY = "YOUR_API_KEY_HERE";
@@ -385,7 +385,7 @@ class Live extends React.Component {
               "
               ></div>
               <div className="absolute bottom-0 w-full flex items-center justify-center font-semibold text-blueGray-500 text-sm">
-                v1.0.0
+                v1.1.0
               </div>
             </div>
           </div>
@@ -407,7 +407,7 @@ class Live extends React.Component {
                   </div>
                 </div>
                 <div className="mt-4 flex sm:mt-0 sm:ml-4 lg:hidden">
-                  v1.0.0
+                  v1.1.0
                 </div>
               </div>
               <div className="divide-y divide-blueGray-200 lg:col-span-9">
