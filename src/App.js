@@ -145,7 +145,7 @@ class Live extends React.Component {
             this.setState({ vtcInitialized: true });
           } else if (
             info.currentState ===
-              '@vatis-tech/asr-client-js: Destroy the "SocketIOClientGenerator" plugin.' &&
+            '@vatis-tech/asr-client-js: Destroy the "SocketIOClientGenerator" plugin.' &&
             this.state.vtcInitialized &&
             this.state.play
           ) {
@@ -231,7 +231,7 @@ class Live extends React.Component {
     } else if (
       this.state.transcriptFrames.length &&
       this.state.transcriptFrames[0].headers.FrameStartTime ===
-        data.headers.FrameStartTime &&
+      data.headers.FrameStartTime &&
       this.state.transcriptFrames[0].headers.Sid === data.headers.Sid
     ) {
       const newTranscriptFrames = [...this.state.transcriptFrames];
@@ -268,20 +268,20 @@ class Live extends React.Component {
           {((key !== transcripts.length - 1 &&
             prop.headers.Sid !== transcripts[key + 1].headers.Sid) ||
             key === transcripts.length - 1) && (
-            <div className="relative">
-              <div
-                className="absolute inset-0 flex items-center"
-                aria-hidden="true"
-              >
-                <div className="w-full border-t border-blueGray-300" />
+              <div className="relative">
+                <div
+                  className="absolute inset-0 flex items-center"
+                  aria-hidden="true"
+                >
+                  <div className="w-full border-t border-blueGray-300" />
+                </div>
+                <div className="relative flex justify-center">
+                  <span className="px-2 bg-white text-sm text-blueGray-500">
+                    {this.state.timeStamps[timeIndex++]}
+                  </span>
+                </div>
               </div>
-              <div className="relative flex justify-center">
-                <span className="px-2 bg-white text-sm text-blueGray-500">
-                  {this.state.timeStamps[timeIndex++]}
-                </span>
-              </div>
-            </div>
-          )}
+            )}
         </React.Fragment>
       );
     });
@@ -303,16 +303,13 @@ class Live extends React.Component {
     const text = newTranscriptFrames
       .map(
         (prop, key) =>
-          `${
-            (key !== newTranscriptFrames.length - 1 &&
-              prop.headers.Sid !== newTranscriptFrames[key + 1].headers.Sid) ||
+          `${(key !== newTranscriptFrames.length - 1 &&
+            prop.headers.Sid !== newTranscriptFrames[key + 1].headers.Sid) ||
             key === newTranscriptFrames.length - 1
-              ? `\n-------------------[${
-                  newTimeStamps[timeIndex++]
-                }]-------------------\n\n`
-              : ""
-          }[${humanizeDuration(prop.headers.FrameStartTime)}]: ${
-            prop.transcript
+            ? `\n-------------------[${newTimeStamps[timeIndex++]
+            }]-------------------\n\n`
+            : ""
+          }[${humanizeDuration(prop.headers.FrameStartTime)}]: ${prop.transcript
           }`
       )
       .reverse()
@@ -385,7 +382,7 @@ class Live extends React.Component {
               "
               ></div>
               <div className="absolute bottom-0 w-full flex items-center justify-center font-semibold text-blueGray-500 text-sm">
-                v1.1.0
+                v2.0.1
               </div>
             </div>
           </div>
@@ -407,7 +404,7 @@ class Live extends React.Component {
                   </div>
                 </div>
                 <div className="mt-4 flex sm:mt-0 sm:ml-4 lg:hidden">
-                  v1.1.0
+                  v2.0.1
                 </div>
               </div>
               <div className="divide-y divide-blueGray-200 lg:col-span-9">
