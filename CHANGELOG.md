@@ -51,6 +51,24 @@ No fixes were made.
 
 Each time you add new changes to this file, please add them bellow this line - i.e. between the [insertion](#insterion) section and the last version added.
 
+## [2.0.1] - 2022-02-10
+
+### Added
+
+No new features were added.
+
+### Changed
+
+`@vatis-tech/asr-client-js@1.3.0-next.3` to `@vatis-tech/asr-client-js@2.0.1`
+
+### Removed
+
+Nothing was removed.
+
+### Fixed
+
+No fixes were made.
+
 ## [1.1.0] - 2022-05-10
 
 ### Added
