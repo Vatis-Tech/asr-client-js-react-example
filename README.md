@@ -1,6 +1,6 @@
 # Vatis Tech - React Example
 
-![version](https://img.shields.io/badge/version-1.1.0-blue.svg)
+![version](https://img.shields.io/badge/version-2.0.1-blue.svg)
 ![license](https://img.shields.io/badge/license-MIT-blue.svg)
 ![GitHub issues open](https://img.shields.io/github/issues/Vatis-Tech/asr-client-js-react-example.svg)
 ![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/Vatis-Tech/asr-client-js-react-example.svg)
