@@ -16,9 +16,10 @@ body:
       description: Please specify what version of `asr-client-js-react-example` you are using, and also, please check if the issue is reproducible with the latest stable version of the plugin.
       multiple: true
       options:
-        - 1.0.0
-        - 1.1.0
+        - 2.0.2
         - 2.0.1
+        - 1.1.0
+        - 1.0.0
     validations:
       required: true
   - type: dropdown
