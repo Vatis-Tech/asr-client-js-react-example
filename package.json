@@ -1,6 +1,6 @@
 {
   "name": "@vatis-tech/asr-client-js_React_Example",
-  "version": "2.0.2",
+  "version": "2.0.4",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "5.15.4",
@@ -10,7 +10,7 @@
     "@testing-library/jest-dom": "5.16.4",
     "@testing-library/react": "13.1.1",
     "@testing-library/user-event": "13.5.0",
-    "@vatis-tech/asr-client-js": "2.0.7",
+    "@vatis-tech/asr-client-js": "2.0.8",
     "autoprefixer": "10.4.5",
     "clsx": "1.1.1",
     "postcss": "8.4.12",
