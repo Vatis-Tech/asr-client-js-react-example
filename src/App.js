@@ -382,7 +382,7 @@ class Live extends React.Component {
               "
               ></div>
               <div className="absolute bottom-0 w-full flex items-center justify-center font-semibold text-blueGray-500 text-sm">
-                v2.0.2
+                v2.0.4
               </div>
             </div>
           </div>
@@ -404,7 +404,7 @@ class Live extends React.Component {
                   </div>
                 </div>
                 <div className="mt-4 flex sm:mt-0 sm:ml-4 lg:hidden">
-                  v2.0.2
+                  v2.0.4
                 </div>
               </div>
               <div className="divide-y divide-blueGray-200 lg:col-span-9">
