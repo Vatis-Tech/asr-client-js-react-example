@@ -366,8 +366,8 @@ class Live extends React.Component {
               <div className="flex flex-shrink-0 items-center justify-center px-6 lg:px-4">
                 <a href="https://vatis.tech/" target="_blank">
                   <img
-                    className="h-16 w-auto"
-                    src={require("./dark_logo_transparent_background.png")}
+                    className="h-6 w-auto my-5"
+                    src={require("./logotype-green-black.svg").default}
                     alt="Vatis Tech"
                   />
                 </a>
@@ -396,8 +396,8 @@ class Live extends React.Component {
                   <div className="flex flex-shrink-0 items-center justify-center px-6 lg:px-4 lg:hidden block">
                     <a href="https://vatis.tech/" target="_blank">
                       <img
-                        className="h-16 w-auto"
-                        src={require("./dark_logo_transparent_background.png")}
+                        className="h-6 w-auto my-5"
+                        src={require("./logotype-green-black.svg").default}
                         alt="Vatis Tech"
                       />
                     </a>
